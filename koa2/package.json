@@ -1,0 +1,14 @@
+{
+    "name": "koa2",
+    "version": "0.0.1",
+    "author": "dantyli",
+    "description": "koa nodejs learn",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "koa": "2.6.2",
+        "koa-bodyparser": "^4.2.1",
+        "koa-router": "^7.4.0"
+    }
+}
