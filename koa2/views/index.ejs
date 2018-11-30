@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>实时交易</title>
+</head>
+<style>
+h1,h5,ul,li{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    line-height: 80px;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+ul li{
+    list-style: none;
+    height: 200px;
+    width: 300px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    padding: 10px;
+}
+</style>
+<body>
+    <h1>主流币对实时交易</h1>
+    <ul>
+        <% data.forEach(function(item){ %>
+            <%if (item.symbol.indexOf('usdt')>-1){%>
+                <li>
+                    <h5><%= item.symbol.substring(0,item.symbol.length-4)+'/'+item.symbol.substr(-4)%></h5>
+                    <p><%=item.close%></p>
+                    <p>24H量:<%=item.vol%></p>
+                </li>
+            <%}%>
+        <% })%>
+    </ul>
+</body>
+</html>
