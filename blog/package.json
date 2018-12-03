@@ -1,0 +1,16 @@
+{
+    "name": "blog-system",
+    "version": "0.1.0",
+    "description": "do somesthing",
+    "author": "dantyli",
+    "license": "MIT",
+    "dependencies": {
+        "ejs": "^2.6.1",
+        "koa": "2.6.2",
+        "koa-bodyparser": "4.2.1",
+        "koa-router": "7.4.0",
+        "koa-views": "^6.1.4",
+        "moment": "^2.22.2",
+        "mysql": "^2.16.0"
+    }
+}
